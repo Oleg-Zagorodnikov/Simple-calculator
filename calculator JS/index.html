@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        div {
+        display: contents;
+        position: relative;
+        }
+    </style>
+    <div>
+        <input id="1" type="number">
+    </div>
+    <div>
+        <input id="2" type="number">
+    </div>
+    <div>
+        <p id="result">Result</p>
+    </div>
+    <div>
+        <button onclick="sum()">Сложить</button>
+        <button onclick="divide()">Разделить</button>
+        <button onclick="multiplay()">Умножить</button>
+        <button onclick="subtraction()">Вычесть</button>
+    </div>
+    <script>
+        
+        function sum() {
+            let sum1 = parseFloat(document.getElementById('1').value);
+            let sum2 = parseFloat(document.getElementById('2').value);
+            let result = sum1 + sum2;
+            document.getElementById("result").innerHTML = "Результат: " + result;
+        
+        }
+        function divide() {
+            let sum1 = parseFloat(document.getElementById('1').value);
+            let sum2 = parseFloat(document.getElementById('2').value);
+            let result = sum1 / sum2;
+            document.getElementById("result").innerHTML = "Результат: " + result;
+        
+        }
+        function multiplay() {
+            let sum1 = parseFloat(document.getElementById('1').value);
+            let sum2 = parseFloat(document.getElementById('2').value);
+            let result = sum1 * sum2;
+            document.getElementById("result").innerHTML = "Результат: " + result;
+        
+        }
+        function subtraction() {
+            let sum1 = parseFloat(document.getElementById('1').value);
+            let sum2 = parseFloat(document.getElementById('2').value);
+            let result = sum1 - sum2;
+            document.getElementById("result").innerHTML = "Результат: " + result;
+        
+        }
+        
+    </script>
+</body>
+</html>
